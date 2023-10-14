@@ -222,11 +222,11 @@ class _ReadMoreXState extends State<ReadMoreX> {
               WidgetSpan(
                 child: GestureDetector(
                   onTap: () {
-                    if (isReadMore) {
+                    //if (isReadMore) {
                       pattern.onTap?.call(contentWord);
-                    } else {
-                      setState(() => isReadMore = !isReadMore);
-                    }
+                    //} else {
+                    //  setState(() => isReadMore = !isReadMore);
+                    //}
                   },
                   child: Text(
                     hasValueChanged ? '${pattern.valueChanged?.call(contentWord)} ' : '$contentWord ',
